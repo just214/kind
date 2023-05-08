@@ -10,6 +10,7 @@
       "import": "./dist/react.es.js"
     }
   },
+  "main": "dist/react.cjs",
   "files": [
     "dist"
   ],

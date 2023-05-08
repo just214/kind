@@ -1,6 +1,7 @@
 {
   "name": "kind",
   "private": false,
+  "version": "independent",
   "workspaces": [
     "packages/*"
   ],
