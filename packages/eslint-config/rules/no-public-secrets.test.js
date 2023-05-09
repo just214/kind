@@ -1,6 +1,6 @@
-const noPublicSecrets = require("./no-public-secrets");
-const { RuleTester } = require("eslint");
-const { test } = require("vitest");
+import noPublicSecrets from "./no-public-secrets";
+import { RuleTester } from "eslint";
+import { it } from "vitest";
 
 const ruleTester = new RuleTester();
 
@@ -63,7 +63,7 @@ const invalid = invalidCases
   .map(toCode)
   .map((code) => ({ ...code, errors: [{ messageId: "noPublicSecrets" }] }));
 
-test("no-public-secrets", () => {
+it("no-public-secrets", () => {
   ruleTester.run("no-public-secrets", noPublicSecrets, {
     valid,
     invalid,

@@ -6,7 +6,7 @@
     "packages/*"
   ],
   "scripts": {
-    "clean": "lerna clean",
+    "check": "lerna run typecheck && lerna run lint && lerna run test && lerna run build",
     "storybook": "lerna run storybook",
     "publish": "lerna publish",
     "test": "lerna run test",
