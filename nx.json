@@ -1,0 +1,31 @@
+{
+  "tasksRunnerOptions": {
+    "default": {
+      "runner": "nx/tasks-runners/default",
+      "options": {
+        "cacheableOperations": [
+          "build",
+          "lint",
+          "lint:fix",
+          "test",
+          "typecheck",
+          "build:css",
+          "build-storybook",
+          "build-storybook:css"
+        ]
+      }
+    }
+  },
+  "targetDefaults": {
+    "build": {
+      "dependsOn": [
+        "^build"
+      ]
+    },
+    "build:css": {
+      "dependsOn": [
+        "^build:css"
+      ]
+    }
+  }
+}
