@@ -18,10 +18,10 @@ export default defineConfig(() => ({
   build: {
     lib: {
       entry: resolve("src", "index.ts"),
-      name: "react-component-library",
+      name: "react",
       formats: ["es", "cjs"],
       fileName: (format) =>
-        `@just214/react-components.${format === "cjs" ? "cjs" : "es.js"}`,
+        `react.${format === "cjs" ? "cjs" : "es.js"}`,
     },
     optimizeDeps: {
       exclude: Object.keys(packageJson.peerDependencies),

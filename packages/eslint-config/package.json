@@ -1,20 +1,15 @@
 {
-  "name": "eslint-config",
-  "version": "1.0.0",
-  "description": "ESLint configuration for React/TypeScript projects.",
-  "author": "just214",
+  "name": "@just214/eslint-config",
+  "version": "0.0.0",
   "main": "index.js",
   "scripts": {
     "build": "echo 'No build step required.'",
-    "format": "prettier --write *.js",
     "lint": "eslint",
     "lint:fix": "eslint --fix",
-    "test": "vitest",
-    "prerelease": "npm run test && npm run format",
-    "release": "npm run prerelease && np --no-2fa"
+    "test": "vitest"
   },
   "devDependencies": {
-    "eslint": "^8.39.0",
+    "eslint": "^8.40.0",
     "prettier": "^2.8.8",
     "typescript": "^5.0.4",
     "vitest": "^0.31.0"
@@ -29,7 +24,7 @@
     "eslint-plugin-standard": "^4.1.0"
   },
   "peerDependencies": {
-    "eslint": "^7 || ^8",
+    "eslint": "^8",
     "prettier": ">=2.4.1",
     "typescript": ">=4.0.0"
   },
@@ -38,6 +33,6 @@
     "url": "git+https://github.com/just214/kind.git"
   },
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com/@just214"
+    "registry": "https://npm.pkg.github.com/"
   }
 }
