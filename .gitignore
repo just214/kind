@@ -34,5 +34,4 @@ yarn-error.log*
 .vscode
 tsconfig.tsbuildinfo
 
-package-lock.json
 .npmrc
