@@ -1,5 +1,48 @@
 {
-  "$schema": "node_modules/lerna/schemas/lerna-schema.json",
-  "useWorkspaces": true,
-  "version": "0.0.0"
+  "name": "kind",
+  "private": false,
+  "version": "independent",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "check": "lerna run typecheck && lerna run lint && lerna run test && lerna run build",
+    "storybook": "lerna run storybook",
+    "publish": "lerna publish",
+    "test": "lerna run test",
+    "lint": "lerna run lint",
+    "lint:fix": "lerna run lint:fix",
+    "build": "lerna run build",
+    "publish:canary": "lerna publish --canary",
+    "update:deps": "ncu -u --deep"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^17.6.3",
+    "@commitlint/config-lerna-scopes": "^17.6.3",
+    "husky": "^8.0.3",
+    "npm-check-updates": "^16.10.10",
+    "lerna": "^6.6.2"
+  },
+  "lerna": {
+    "$schema": "node_modules/lerna/schemas/lerna-schema.json",
+    "useWorkspaces": true,
+    "version": "0.0.0"
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-lerna-scopes"
+    ]
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/just214/kind/issues"
+  },
+  "homepage": "https://github.com/just214/kind#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/just214/kind.git"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  }
 }
