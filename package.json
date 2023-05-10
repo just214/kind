@@ -5,9 +5,9 @@
     "packages/*"
   ],
   "scripts": {
-    "check": "lerna run typecheck && lerna run lint && lerna run test && lerna run build",
+    "prepub": "lerna run typecheck && lerna run lint && lerna run test && lerna run build",
     "storybook": "lerna run storybook",
-    "publish": "lerna publish",
+    "publish": "npm run prepub && lerna publish",
     "test": "lerna run test",
     "lint": "lerna run lint",
     "lint:fix": "lerna run lint:fix",
