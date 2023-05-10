@@ -1,7 +1,7 @@
 {
   "name": "@just214/react",
   "private": false,
-  "version": "0.0.3",
+  "version": "0.0.4-alpha.0",
   "type": "module",
   "types": "dist/index.d.ts",
   "exports": {
@@ -28,7 +28,7 @@
   "devDependencies": {
     "@babel/core": "^7.21.8",
     "@headlessui/react": "^1.7.14",
-    "@just214/eslint-config": "^0.0.1",
+    "@just214/eslint-config": "^0.0.2-alpha.0",
     "@storybook/addon-essentials": "^7.0.9",
     "@storybook/addon-interactions": "^7.0.9",
     "@storybook/addon-links": "^7.0.9",
