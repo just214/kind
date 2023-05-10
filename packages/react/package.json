@@ -1,5 +1,6 @@
 {
   "name": "@just214/react",
+  "private": false,
   "version": "0.0.3",
   "type": "module",
   "types": "dist/index.d.ts",

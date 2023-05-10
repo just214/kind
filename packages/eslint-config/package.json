@@ -1,5 +1,6 @@
 {
   "name": "@just214/eslint-config",
+  "private": false,
   "version": "0.0.1",
   "main": "dist/index.js",
   "scripts": {
