@@ -16,7 +16,7 @@ const startsWithClientSidePrepend = (name: string) =>
 const containsSecretKeyword = (name: string) =>
   /(_(SECRET|PASSWORD|PW)_?)|(_(SECRET|PASSWORD|PW)$)/i.test(name);
 
-export const noPublicSecrets = {
+module.exports = {
   meta: {
     messages: {
       noPublicSecrets: "Do not expose secrets to the browser.",

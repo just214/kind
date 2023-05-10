@@ -1,4 +1,4 @@
-import { noPublicSecrets } from "./no-public-secrets";
+import { noPublicSecrets } from "../src/rules/no-public-secrets";
 import { RuleTester } from "eslint";
 import { it } from "vitest";
 
