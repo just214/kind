@@ -20,8 +20,7 @@ export default defineConfig(() => ({
       entry: resolve("src", "index.ts"),
       name: "react",
       formats: ["es", "cjs"],
-      fileName: (format) =>
-        `react.${format === "cjs" ? "cjs" : "es.js"}`,
+      fileName: (format) => `react.${format === "cjs" ? "cjs" : "es.js"}`,
     },
     optimizeDeps: {
       exclude: Object.keys(packageJson.peerDependencies),

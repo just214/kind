@@ -23,7 +23,7 @@
     "declarationMap": true,
     "baseUrl": ".",
     "paths": {
-      "@just214/react-components": [
+      "@just214/react": [
         "src/index.ts"
       ],
     },
