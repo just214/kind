@@ -1,5 +1,5 @@
-import { noPublicSecrets } from "../src/rules/no-public-secrets";
-import { RuleTester } from "eslint";
+const noPublicSecrets = require("../rules/no-public-secrets");
+const { RuleTester } = require("eslint");
 import { it } from "vitest";
 
 const ruleTester = new RuleTester();
@@ -55,7 +55,7 @@ const invalidCases = [
   "PUBLIC_API_PW_KEY",
 ];
 
-const toCode = (testCase: any) => ({ code: testCase });
+const toCode = (testCase) => ({ code: testCase });
 
 const valid = validCases.map(toCode);
 

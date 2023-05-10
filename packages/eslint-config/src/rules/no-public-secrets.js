@@ -10,10 +10,10 @@ const clientSidePrepends = [
   "GATSBY_",
 ];
 
-const startsWithClientSidePrepend = (name: string) =>
+const startsWithClientSidePrepend = (name) =>
   clientSidePrepends.some((prepend) => name.startsWith(prepend));
 
-const containsSecretKeyword = (name: string) =>
+const containsSecretKeyword = (name) =>
   /(_(SECRET|PASSWORD|PW)_?)|(_(SECRET|PASSWORD|PW)$)/i.test(name);
 
 module.exports = {
@@ -22,9 +22,9 @@ module.exports = {
       noPublicSecrets: "Do not expose secrets to the browser.",
     },
   },
-  create(context: any) {
+  create(context) {
     return {
-      Identifier(node: { name: string }) {
+      Identifier(node) {
         if (
           startsWithClientSidePrepend(node.name) &&
           containsSecretKeyword(node.name)

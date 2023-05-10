@@ -2,9 +2,9 @@
   "name": "@just214/eslint-config",
   "private": false,
   "version": "0.0.1",
-  "main": "dist/index.js",
+  "main": "src/index.js",
   "scripts": {
-    "build": "tsc -b",
+    "build": "echo \"No build script required\" && exit 1",
     "lint": "eslint",
     "lint:fix": "eslint --fix",
     "test": "vitest"
@@ -13,7 +13,6 @@
     "@types/eslint": "^8.37.0",
     "eslint": "^8.40.0",
     "prettier": "^2.8.8",
-    "typescript": "^5.0.4",
     "vitest": "^0.31.0"
   },
   "dependencies": {
