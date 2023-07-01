@@ -1,0 +1,43 @@
+{
+  "name": "@just214/tailwind",
+  "private": false,
+  "version": "0.0.0",
+  "description": "",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "require": "./dist/index.js",
+      "import": "./dist/index.mjs"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup src/index.ts --dts --format esm,cjs",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "devDependencies": {
+    "@types/tailwindcss": "^3.1.0",
+    "lodash": "^4.17.21",
+    "tsup": "^7.1.0"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/just214/kind/issues"
+  },
+  "homepage": "https://github.com/just214/kind#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/just214/kind.git"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
+  "dependencies": {
+    "@tailwindcss/container-queries": "^0.1.1",
+    "@tailwindcss/typography": "^0.5.9"
+  }
+}
