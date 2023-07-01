@@ -1,5 +1,7 @@
-src/stories
+stories
+demo
 .storybook
 index.html
 tailwind.config.js
-vite.config.ts
+tsconfig.json
+node_modules

@@ -1,4 +1,4 @@
-import { Emoji } from "../components/Emoji";
+import { Emoji } from "../src/components/Emoji";
 
 import type { Meta, StoryObj } from "@storybook/react";
 
