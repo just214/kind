@@ -1,7 +1,7 @@
 {
   "name": "@just214/eslint-config",
   "private": false,
-  "version": "0.0.2-alpha.0",
+  "version": "0.0.0",
   "main": "src/index.js",
   "scripts": {
     "build": "echo \"No build script required\" && exit 0",
@@ -10,10 +10,10 @@
     "test": "vitest"
   },
   "devDependencies": {
-    "@types/eslint": "^8.37.0",
-    "eslint": "^8.40.0",
+    "@types/eslint": "^8.40.2",
+    "eslint": "^8.44.0",
     "prettier": "^2.8.8",
-    "vitest": "^0.31.0"
+    "vitest": "^0.32.2"
   },
   "dependencies": {
     "eslint-config-prettier": "^8.8.0",
