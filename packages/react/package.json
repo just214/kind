@@ -1,7 +1,7 @@
 {
   "name": "@just214/react",
   "private": false,
-  "version": "0.0.0",
+  "version": "0.0.1",
   "types": "dist/index.d.ts",
   "exports": {
     ".": {
@@ -24,8 +24,8 @@
   },
   "devDependencies": {
     "@headlessui/react": "^1.7.15",
-    "@just214/eslint-config": "*",
-    "@just214/tailwind": "*",
+    "@just214/eslint-config": "^0.0.1",
+    "@just214/tailwind": "^0.0.1",
     "@storybook/addon-a11y": "^7.0.24",
     "@storybook/addon-essentials": "^7.0.24",
     "@storybook/addon-interactions": "^7.0.24",

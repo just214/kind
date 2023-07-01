@@ -1,7 +1,7 @@
 {
   "name": "@just214/tailwind",
   "private": false,
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "",
   "types": "dist/index.d.ts",
   "exports": {
