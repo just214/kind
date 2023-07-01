@@ -7,7 +7,7 @@
   "scripts": {
     "prepub": "lerna run typecheck && lerna run lint && vitest run && lerna run build",
     "storybook": "lerna run storybook",
-    "publish": "npm run prepub && lerna publish",
+    "publish": "lerna publish",
     "test": "lerna run test",
     "lint": "lerna run lint",
     "lint:fix": "lerna run lint:fix",
